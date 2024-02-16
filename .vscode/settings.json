@@ -1,0 +1,15 @@
+{
+  "sqltools.connections": [],
+  "remote.SSH.defaultForwardedPorts": [
+    {
+      "localPort": 8000,
+      "name": "Airbyte",
+      "remotePort": 8000
+    },
+    {
+      "localPort": 3000,
+      "name": "Dagster",
+      "remotePort": 3000
+    }
+  ]
+}

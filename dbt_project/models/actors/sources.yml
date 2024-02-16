@@ -1,0 +1,14 @@
+version: 2
+sources:
+- name: source
+  schema: public
+  database: em # change this to your name
+  tables:
+  - name: actor
+    meta:
+      dagster:
+        asset_key: ["actor"]
+  - name: actor_info
+    meta:
+      dagster:
+        asset_key: ["actor_info"]

@@ -1,0 +1,7 @@
+version: 2
+models:
+  - name: with_full_name
+    description: This is a model that gives actors full names
+    columns: 
+      - name: full_name
+        description: The full name of the actor

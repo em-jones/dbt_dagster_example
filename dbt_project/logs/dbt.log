@@ -1,0 +1,1021 @@
+
+
+============================== 14:23:51.657263 | d02a06d2-b736-4858-b341-56dbbab21452 ==============================
+[0m14:23:51.657263 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:23:51.658924 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/em/dbt_project/src/dbt_project', 'log_path': '/home/em/dbt_project/src/dbt_project/logs', 'debug': 'False', 'version_check': 'True', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt deps', 'log_format': 'default', 'static_parser': 'True', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m14:23:51.664421 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m14:23:51.664752 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:23:51.707180 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-83qbl42r'
+[0m14:23:51.707518 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
+[0m14:23:51.707870 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+[0m14:23:52.165308 [debug] [MainThread]: STDOUT: "b''"
+[0m14:23:52.165652 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+[0m14:23:52.166046 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+[0m14:23:52.166227 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:23:52.167263 [debug] [MainThread]: STDOUT: "b'23ddc9e1526416b6a8ceeb9a317ca75ba0e92acf\n'"
+[0m14:23:52.167521 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:52.167719 [debug] [MainThread]: Checking out revision 5717b109d358844e0f085565b93e74cbe469ecb0.
+[0m14:23:52.167899 [debug] [MainThread]: Executing "git fetch origin --depth 1 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:23:52.721389 [debug] [MainThread]: STDOUT: "b''"
+[0m14:23:52.721677 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * branch            5717b109d358844e0f085565b93e74cbe469ecb0 -> FETCH_HEAD\n'"
+[0m14:23:52.721884 [debug] [MainThread]: Executing "git reset --hard 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:23:52.727680 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+[0m14:23:52.727946 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:52.728123 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:23:52.729069 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:23:52.729294 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:52.729476 [debug] [MainThread]: Checked out at 5717b10.
+[0m14:23:52.729661 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:23:52.730695 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:23:52.730968 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:52.731545 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+[0m14:23:52.732585 [debug] [MainThread]: STDOUT: "b''"
+[0m14:23:52.732819 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+[0m14:23:52.732996 [debug] [MainThread]: command return code=128
+[0m14:23:52.733438 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+[0m14:23:52.733623 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:23:52.734458 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:23:52.734651 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:52.734812 [debug] [MainThread]: Checking out revision 5717b109d358844e0f085565b93e74cbe469ecb0.
+[0m14:23:52.734984 [debug] [MainThread]: Executing "git fetch origin --depth 1 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:23:53.114506 [debug] [MainThread]: STDOUT: "b''"
+[0m14:23:53.114821 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * branch            5717b109d358844e0f085565b93e74cbe469ecb0 -> FETCH_HEAD\n'"
+[0m14:23:53.115022 [debug] [MainThread]: Executing "git reset --hard 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:23:53.118347 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+[0m14:23:53.118622 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:53.118804 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:23:53.119671 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:23:53.119903 [debug] [MainThread]: STDERR: "b''"
+[0m14:23:53.120081 [debug] [MainThread]: Already at 5717b10, nothing to do.
+[0m14:23:53.120294 [info ] [MainThread]: Installed from revision 5717b109d358844e0f085565b93e74cbe469ecb0
+[0m14:23:53.120923 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.4868076, "process_user_time": 1.095054, "process_kernel_time": 0.069685, "process_mem_max_rss": "105116", "process_out_blocks": "24", "process_in_blocks": "0"}
+[0m14:23:53.121267 [debug] [MainThread]: Command `dbt deps` succeeded at 14:23:53.121187 after 1.49 seconds
+[0m14:23:53.121468 [debug] [MainThread]: Flushing usage events
+
+
+============================== 14:24:24.052338 | 897e9ebf-672d-4f0e-bf42-f88334011b58 ==============================
+[0m14:24:24.052338 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:24:24.053938 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/em/dbt_project/src/dbt_project', 'debug': 'False', 'warn_error': 'None', 'log_path': '/home/em/dbt_project/src/dbt_project/logs', 'version_check': 'True', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'log_format': 'default', 'static_parser': 'True', 'introspect': 'True', 'invocation_command': 'dbt debug', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'send_anonymous_usage_stats': 'False'}
+[0m14:24:24.054289 [info ] [MainThread]: dbt version: 1.7.7
+[0m14:24:24.054529 [info ] [MainThread]: python version: 3.11.0
+[0m14:24:24.054753 [info ] [MainThread]: python path: /home/em/dbt_project/src/dbt_project/venv/bin/python
+[0m14:24:24.055158 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:24:24.057974 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.postgres'
+[0m14:24:24.058299 [info ] [MainThread]: Using profiles dir at /home/em/dbt_project/src/dbt_project
+[0m14:24:24.058516 [info ] [MainThread]: Using profiles.yml file at /home/em/dbt_project/src/dbt_project/profiles.yml
+[0m14:24:24.058707 [info ] [MainThread]: Using dbt_project.yml file at /home/em/dbt_project/src/dbt_project/dbt_project.yml
+[0m14:24:24.063232 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m14:24:24.063559 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:24:24.104283 [info ] [MainThread]: Configuration:
+[0m14:24:24.104629 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m14:24:24.104865 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:24:24.105091 [info ] [MainThread]: Required dependencies:
+[0m14:24:24.105331 [debug] [MainThread]: Executing "git --help"
+[0m14:24:24.106474 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:24:24.106772 [debug] [MainThread]: STDERR: "b''"
+[0m14:24:24.106978 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:24:24.107210 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m14:24:24.107423 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:24:24.107633 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Credentials in profile "normalize", target "prod" invalid: Runtime Error
+    Could not find adapter type postgres!
+
+
+[0m14:24:24.108129 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.07807454, "process_user_time": 1.047311, "process_kernel_time": 0.050351, "process_mem_max_rss": "104948", "process_out_blocks": "16", "command_success": false, "process_in_blocks": "0"}
+[0m14:24:24.108494 [debug] [MainThread]: Command `dbt debug` failed at 14:24:24.108412 after 0.08 seconds
+[0m14:24:24.108739 [debug] [MainThread]: Flushing usage events
+
+
+============================== 14:27:07.945215 | 772d5b5d-7537-4f61-9b19-f99ef879c0fb ==============================
+[0m14:27:07.945215 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:27:07.947243 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/em/dbt_project/src/dbt_project', 'fail_fast': 'False', 'version_check': 'True', 'log_path': '/home/em/dbt_project/src/dbt_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m14:27:07.947542 [info ] [MainThread]: dbt version: 1.7.7
+[0m14:27:07.947763 [info ] [MainThread]: python version: 3.11.0
+[0m14:27:07.947981 [info ] [MainThread]: python path: /home/em/dbt_project/src/dbt_project/venv/bin/python
+[0m14:27:07.948182 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:27:07.995612 [info ] [MainThread]: Using profiles dir at /home/em/dbt_project/src/dbt_project
+[0m14:27:07.995997 [info ] [MainThread]: Using profiles.yml file at /home/em/dbt_project/src/dbt_project/profiles.yml
+[0m14:27:07.996233 [info ] [MainThread]: Using dbt_project.yml file at /home/em/dbt_project/src/dbt_project/dbt_project.yml
+[0m14:27:07.996526 [info ] [MainThread]: adapter type: postgres
+[0m14:27:07.996738 [info ] [MainThread]: adapter version: 1.7.7
+[0m14:27:08.001816 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m14:27:08.002168 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:27:08.045081 [info ] [MainThread]: Configuration:
+[0m14:27:08.045347 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:27:08.045552 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:27:08.045755 [info ] [MainThread]: Required dependencies:
+[0m14:27:08.045956 [debug] [MainThread]: Executing "git --help"
+[0m14:27:08.047054 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:27:08.047316 [debug] [MainThread]: STDERR: "b''"
+[0m14:27:08.047521 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:27:08.047718 [info ] [MainThread]: Connection:
+[0m14:27:08.047917 [info ] [MainThread]:   host: localhost
+[0m14:27:08.048142 [info ] [MainThread]:   port: 6543
+[0m14:27:08.048340 [info ] [MainThread]:   user: dest
+[0m14:27:08.048521 [info ] [MainThread]:   database: dest
+[0m14:27:08.048700 [info ] [MainThread]:   schema: public
+[0m14:27:08.048878 [info ] [MainThread]:   connect_timeout: 10
+[0m14:27:08.049053 [info ] [MainThread]:   role: None
+[0m14:27:08.049227 [info ] [MainThread]:   search_path: None
+[0m14:27:08.049401 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:27:08.049572 [info ] [MainThread]:   sslmode: None
+[0m14:27:08.049742 [info ] [MainThread]:   sslcert: None
+[0m14:27:08.049912 [info ] [MainThread]:   sslkey: None
+[0m14:27:08.050082 [info ] [MainThread]:   sslrootcert: None
+[0m14:27:08.050253 [info ] [MainThread]:   application_name: dbt
+[0m14:27:08.050421 [info ] [MainThread]:   retries: 1
+[0m14:27:08.050626 [info ] [MainThread]: Registered adapter: postgres=1.7.7
+[0m14:27:08.050928 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:27:08.051109 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:27:08.051275 [debug] [MainThread]: On debug: select 1 as id
+[0m14:27:08.051432 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:27:08.051812 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 6543 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m14:27:08.052240 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:27:08.052448 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:27:08.052655 [debug] [MainThread]: On debug: No close available on handle
+[0m14:27:08.052837 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:27:08.053033 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:27:08.053227 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 6543 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:27:08.053671 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.13149987, "process_user_time": 1.171741, "process_kernel_time": 0.050074, "process_mem_max_rss": "109744", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m14:27:08.053991 [debug] [MainThread]: Command `dbt debug` failed at 14:27:08.053917 after 0.13 seconds
+[0m14:27:08.054184 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:27:08.054365 [debug] [MainThread]: Flushing usage events
+
+
+============================== 14:33:36.555258 | 852146bc-d45a-49c2-883e-9ee8ba81e4ed ==============================
+[0m14:33:36.555258 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:33:36.557015 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'profiles_dir': '/home/em/dbt_project/src/dbt_project', 'log_path': '/home/em/dbt_project/src/dbt_project/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt ', 'send_anonymous_usage_stats': 'False'}
+[0m14:33:36.563007 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m14:33:36.563377 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:33:36.615918 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-ezkkby8p'
+[0m14:33:36.616268 [info ] [MainThread]: Installing https://github.com/fishtown-analytics/dbt-utils.git
+[0m14:33:36.616640 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+[0m14:33:37.099863 [debug] [MainThread]: STDOUT: "b''"
+[0m14:33:37.100167 [debug] [MainThread]: STDERR: "b"Cloning into '859fd0fa21176efee375a447937f7a46'...\n""
+[0m14:33:37.100408 [debug] [MainThread]: Pulling new dependency 859fd0fa21176efee375a447937f7a46.
+[0m14:33:37.100568 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:33:37.101410 [debug] [MainThread]: STDOUT: "b'23ddc9e1526416b6a8ceeb9a317ca75ba0e92acf\n'"
+[0m14:33:37.101583 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:37.101762 [debug] [MainThread]: Checking out revision 5717b109d358844e0f085565b93e74cbe469ecb0.
+[0m14:33:37.101943 [debug] [MainThread]: Executing "git fetch origin --depth 1 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:33:37.700151 [debug] [MainThread]: STDOUT: "b''"
+[0m14:33:37.700463 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * branch            5717b109d358844e0f085565b93e74cbe469ecb0 -> FETCH_HEAD\n'"
+[0m14:33:37.700640 [debug] [MainThread]: Executing "git reset --hard 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:33:37.706542 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+[0m14:33:37.706798 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:37.706954 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:33:37.707830 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:33:37.708017 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:37.708183 [debug] [MainThread]: Checked out at 5717b10.
+[0m14:33:37.708329 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:33:37.709092 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:33:37.709278 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:37.709684 [debug] [MainThread]: Executing "git clone --depth 1 https://github.com/fishtown-analytics/dbt-utils.git 859fd0fa21176efee375a447937f7a46"
+[0m14:33:37.710521 [debug] [MainThread]: STDOUT: "b''"
+[0m14:33:37.710709 [debug] [MainThread]: STDERR: "b"fatal: destination path '859fd0fa21176efee375a447937f7a46' already exists and is not an empty directory.\n""
+[0m14:33:37.710877 [debug] [MainThread]: command return code=128
+[0m14:33:37.711245 [debug] [MainThread]: Updating existing dependency 859fd0fa21176efee375a447937f7a46.
+[0m14:33:37.711397 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:33:37.712191 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:33:37.712379 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:37.712539 [debug] [MainThread]: Checking out revision 5717b109d358844e0f085565b93e74cbe469ecb0.
+[0m14:33:37.712679 [debug] [MainThread]: Executing "git fetch origin --depth 1 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:33:38.126394 [debug] [MainThread]: STDOUT: "b''"
+[0m14:33:38.126685 [debug] [MainThread]: STDERR: "b'From https://github.com/fishtown-analytics/dbt-utils\n * branch            5717b109d358844e0f085565b93e74cbe469ecb0 -> FETCH_HEAD\n'"
+[0m14:33:38.126859 [debug] [MainThread]: Executing "git reset --hard 5717b109d358844e0f085565b93e74cbe469ecb0"
+[0m14:33:38.129964 [debug] [MainThread]: STDOUT: "b'HEAD is now at 5717b10 Fix union_relations error when no include/exclude provided\n'"
+[0m14:33:38.130214 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:38.130370 [debug] [MainThread]: Executing "git rev-parse HEAD"
+[0m14:33:38.131169 [debug] [MainThread]: STDOUT: "b'5717b109d358844e0f085565b93e74cbe469ecb0\n'"
+[0m14:33:38.131353 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:38.131505 [debug] [MainThread]: Already at 5717b10, nothing to do.
+[0m14:33:38.131692 [info ] [MainThread]: Installed from revision 5717b109d358844e0f085565b93e74cbe469ecb0
+[0m14:33:38.132260 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 1.6022316, "process_user_time": 1.091675, "process_kernel_time": 0.050076, "process_mem_max_rss": "201936", "process_out_blocks": "24", "process_in_blocks": "0"}
+[0m14:33:38.132558 [debug] [MainThread]: Command `cli deps` succeeded at 14:33:38.132489 after 1.60 seconds
+[0m14:33:38.132735 [debug] [MainThread]: Flushing usage events
+
+
+============================== 14:33:57.247986 | acfc7a98-4bc3-4393-ae24-6de59c6c6f3a ==============================
+[0m14:33:57.247986 [info ] [MainThread]: Running with dbt=1.7.7
+[0m14:33:57.249799 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/home/em/dbt_project/src/dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/home/em/dbt_project/src/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt ', 'log_format': 'default', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m14:33:57.250087 [info ] [MainThread]: dbt version: 1.7.7
+[0m14:33:57.250314 [info ] [MainThread]: python version: 3.11.0
+[0m14:33:57.250522 [info ] [MainThread]: python path: /home/em/dbt_project/src/dbt_project/venv/bin/python
+[0m14:33:57.250731 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m14:33:57.298689 [info ] [MainThread]: Using profiles dir at /home/em/dbt_project/src/dbt_project
+[0m14:33:57.299017 [info ] [MainThread]: Using profiles.yml file at /home/em/dbt_project/src/dbt_project/profiles.yml
+[0m14:33:57.299245 [info ] [MainThread]: Using dbt_project.yml file at /home/em/dbt_project/src/dbt_project/dbt_project.yml
+[0m14:33:57.299523 [info ] [MainThread]: adapter type: postgres
+[0m14:33:57.299731 [info ] [MainThread]: adapter version: 1.7.7
+[0m14:33:57.305052 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m14:33:57.305395 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m14:33:57.348939 [info ] [MainThread]: Configuration:
+[0m14:33:57.349324 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:33:57.349500 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m14:33:57.349812 [info ] [MainThread]: Required dependencies:
+[0m14:33:57.350068 [debug] [MainThread]: Executing "git --help"
+[0m14:33:57.351263 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:33:57.351542 [debug] [MainThread]: STDERR: "b''"
+[0m14:33:57.351727 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:33:57.351929 [info ] [MainThread]: Connection:
+[0m14:33:57.352133 [info ] [MainThread]:   host: localhost
+[0m14:33:57.352316 [info ] [MainThread]:   port: 6543
+[0m14:33:57.352498 [info ] [MainThread]:   user: dest
+[0m14:33:57.352675 [info ] [MainThread]:   database: dest
+[0m14:33:57.352854 [info ] [MainThread]:   schema: public
+[0m14:33:57.353034 [info ] [MainThread]:   connect_timeout: 10
+[0m14:33:57.353215 [info ] [MainThread]:   role: None
+[0m14:33:57.353393 [info ] [MainThread]:   search_path: None
+[0m14:33:57.353571 [info ] [MainThread]:   keepalives_idle: 0
+[0m14:33:57.353745 [info ] [MainThread]:   sslmode: None
+[0m14:33:57.353916 [info ] [MainThread]:   sslcert: None
+[0m14:33:57.354084 [info ] [MainThread]:   sslkey: None
+[0m14:33:57.354254 [info ] [MainThread]:   sslrootcert: None
+[0m14:33:57.354428 [info ] [MainThread]:   application_name: dbt
+[0m14:33:57.354596 [info ] [MainThread]:   retries: 1
+[0m14:33:57.354806 [info ] [MainThread]: Registered adapter: postgres=1.7.7
+[0m14:33:57.355127 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m14:33:57.355307 [debug] [MainThread]: Using postgres connection "debug"
+[0m14:33:57.355465 [debug] [MainThread]: On debug: select 1 as id
+[0m14:33:57.355619 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:33:57.356087 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (127.0.0.1), port 6543 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m14:33:57.356668 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m14:33:57.356882 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m14:33:57.357070 [debug] [MainThread]: On debug: No close available on handle
+[0m14:33:57.357245 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m14:33:57.357442 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:33:57.357607 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (127.0.0.1), port 6543 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m14:33:57.358078 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_wall_clock_time": 0.13498746, "process_user_time": 1.21135, "process_kernel_time": 0.039716, "process_mem_max_rss": "196728", "process_out_blocks": "24", "command_success": false, "process_in_blocks": "0"}
+[0m14:33:57.358385 [debug] [MainThread]: Command `cli debug` failed at 14:33:57.358312 after 0.14 seconds
+[0m14:33:57.358578 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:33:57.358750 [debug] [MainThread]: Flushing usage events
+
+
+============================== 11:47:17.624140 | 3f32c760-5590-41fc-87ef-623218cedce5 ==============================
+[0m11:47:17.624140 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:47:17.626023 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'fail_fast': 'False', 'debug': 'False', 'log_path': '/home/em/dbt_project/src/em/dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/home/em/dbt_project/src/em/dbt_project', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'static_parser': 'True', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m11:47:17.626324 [info ] [MainThread]: dbt version: 1.7.3
+[0m11:47:17.626546 [info ] [MainThread]: python version: 3.11.0
+[0m11:47:17.626749 [info ] [MainThread]: python path: /home/em/.asdf/installs/python/3.11.0/bin/python3.11
+[0m11:47:17.626949 [info ] [MainThread]: os info: Linux-5.15.133.1-microsoft-standard-WSL2-x86_64-with-glibc2.35
+[0m11:47:17.695498 [info ] [MainThread]: Using profiles dir at /home/em/dbt_project/src/em/dbt_project
+[0m11:47:17.695878 [info ] [MainThread]: Using profiles.yml file at /home/em/dbt_project/src/em/dbt_project/profiles.yml
+[0m11:47:17.696108 [info ] [MainThread]: Using dbt_project.yml file at /home/em/dbt_project/src/em/dbt_project/dbt_project.yml
+[0m11:47:17.696998 [info ] [MainThread]: adapter type: postgres
+[0m11:47:17.697251 [info ] [MainThread]: adapter version: 1.7.3
+[0m11:47:17.700678 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m11:47:17.701079 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m11:47:17.767479 [info ] [MainThread]: Configuration:
+[0m11:47:17.767825 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m11:47:17.768046 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m11:47:17.768233 [info ] [MainThread]: Required dependencies:
+[0m11:47:17.768451 [debug] [MainThread]: Executing "git --help"
+[0m11:47:17.769750 [debug] [MainThread]: STDOUT: "b"usage: git [--version] [--help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m11:47:17.770079 [debug] [MainThread]: STDERR: "b''"
+[0m11:47:17.770280 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m11:47:17.770477 [info ] [MainThread]: Connection:
+[0m11:47:17.770689 [info ] [MainThread]:   host: localhost
+[0m11:47:17.770870 [info ] [MainThread]:   port: 6543
+[0m11:47:17.771056 [info ] [MainThread]:   user: postgres
+[0m11:47:17.771244 [info ] [MainThread]:   database: em
+[0m11:47:17.771420 [info ] [MainThread]:   schema: public
+[0m11:47:17.771609 [info ] [MainThread]:   connect_timeout: 10
+[0m11:47:17.771806 [info ] [MainThread]:   role: None
+[0m11:47:17.771997 [info ] [MainThread]:   search_path: None
+[0m11:47:17.772173 [info ] [MainThread]:   keepalives_idle: 0
+[0m11:47:17.772355 [info ] [MainThread]:   sslmode: None
+[0m11:47:17.772544 [info ] [MainThread]:   sslcert: None
+[0m11:47:17.772737 [info ] [MainThread]:   sslkey: None
+[0m11:47:17.773196 [info ] [MainThread]:   sslrootcert: None
+[0m11:47:17.773415 [info ] [MainThread]:   application_name: dbt
+[0m11:47:17.773616 [info ] [MainThread]:   retries: 1
+[0m11:47:17.773851 [info ] [MainThread]: Registered adapter: postgres=1.7.3
+[0m11:47:17.774190 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m11:47:17.774383 [debug] [MainThread]: Using postgres connection "debug"
+[0m11:47:17.774560 [debug] [MainThread]: On debug: select 1 as id
+[0m11:47:17.774726 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:17.786319 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m11:47:17.786960 [debug] [MainThread]: On debug: Close
+[0m11:47:17.787213 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m11:47:17.787442 [info ] [MainThread]: [32mAll checks passed![0m
+[0m11:47:17.788473 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 0.19754645, "process_user_time": 1.256524, "process_kernel_time": 0.072095, "process_mem_max_rss": "121776", "process_in_blocks": "43344", "process_out_blocks": "24"}
+[0m11:47:17.788839 [debug] [MainThread]: Command `dbt debug` succeeded at 11:47:17.788753 after 0.20 seconds
+[0m11:47:17.789058 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m11:47:17.789260 [debug] [MainThread]: Flushing usage events
+
+
+============================== 11:47:26.986853 | 98b1532a-530f-4d4c-bba4-aa92de5b4bfe ==============================
+[0m11:47:26.986853 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:47:26.988534 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/em/dbt_project/src/em/dbt_project', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/home/em/dbt_project/src/em/dbt_project/logs', 'debug': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m11:47:27.055746 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m11:47:27.056281 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m11:47:27.222445 [info ] [MainThread]: Registered adapter: postgres=1.7.3
+[0m11:47:27.229927 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m11:47:27.230320 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m11:47:28.068750 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.movies
+[0m11:47:28.080690 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 835 macros, 0 groups, 0 semantic models
+[0m11:47:28.081653 [info ] [MainThread]: 
+[0m11:47:28.082209 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:47:28.083161 [debug] [ThreadPool]: Acquiring new postgres connection 'list_em'
+[0m11:47:28.089509 [debug] [ThreadPool]: Using postgres connection "list_em"
+[0m11:47:28.089825 [debug] [ThreadPool]: On list_em: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:47:28.090040 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:28.095749 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m11:47:28.096681 [debug] [ThreadPool]: On list_em: Close
+[0m11:47:28.097879 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_em, now list_em_public)
+[0m11:47:28.101424 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:28.101653 [debug] [ThreadPool]: On list_em_public: BEGIN
+[0m11:47:28.101827 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:47:28.106071 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:28.106312 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:28.106507 [debug] [ThreadPool]: On list_em_public: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em_public"} */
+select
+      'em' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:47:28.109532 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m11:47:28.110316 [debug] [ThreadPool]: On list_em_public: ROLLBACK
+[0m11:47:28.110853 [debug] [ThreadPool]: On list_em_public: Close
+[0m11:47:28.114582 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.114808 [debug] [MainThread]: On master: BEGIN
+[0m11:47:28.114987 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:28.118644 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:28.118872 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.119100 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:47:28.122673 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m11:47:28.123388 [debug] [MainThread]: On master: ROLLBACK
+[0m11:47:28.124032 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.124255 [debug] [MainThread]: On master: BEGIN
+[0m11:47:28.124958 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:28.125188 [debug] [MainThread]: On master: COMMIT
+[0m11:47:28.125381 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.125565 [debug] [MainThread]: On master: COMMIT
+[0m11:47:28.126160 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:28.126416 [debug] [MainThread]: On master: Close
+[0m11:47:28.126900 [info ] [MainThread]: Concurrency: 8 threads (target='prod')
+[0m11:47:28.127167 [info ] [MainThread]: 
+[0m11:47:28.130408 [debug] [Thread-1 (]: Began running node model.airbyte_utils.transformed
+[0m11:47:28.130836 [info ] [Thread-1 (]: 1 of 1 START sql view model public.transformed ......................................................................... [RUN]
+[0m11:47:28.131313 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_em_public, now model.airbyte_utils.transformed)
+[0m11:47:28.131543 [debug] [Thread-1 (]: Began compiling node model.airbyte_utils.transformed
+[0m11:47:28.135024 [debug] [Thread-1 (]: Writing injected SQL for node "model.airbyte_utils.transformed"
+[0m11:47:28.135764 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (compile): 11:47:28.131684 => 11:47:28.135587
+[0m11:47:28.136010 [debug] [Thread-1 (]: Began executing node model.airbyte_utils.transformed
+[0m11:47:28.159504 [debug] [Thread-1 (]: Writing runtime sql for node "model.airbyte_utils.transformed"
+[0m11:47:28.160332 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:28.160640 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: BEGIN
+[0m11:47:28.160896 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:47:28.165372 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:28.165944 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:28.166367 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+
+  create view "em".public."transformed__dbt_tmp"
+    
+    
+  as (
+    select
+    actor_id,
+    last_name,
+    first_name,
+    first_name || last_name as full_name,
+    last_update,
+from actor
+  );
+[0m11:47:28.167473 [debug] [Thread-1 (]: Postgres adapter: Postgres error: syntax error at or near "from"
+LINE 13: from actor
+         ^
+
+[0m11:47:28.167781 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: ROLLBACK
+[0m11:47:28.168501 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (execute): 11:47:28.136143 => 11:47:28.168318
+[0m11:47:28.168794 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: Close
+[0m11:47:28.175306 [debug] [Thread-1 (]: Database Error in model transformed (models/transformed.sql)
+  syntax error at or near "from"
+  LINE 13: from actor
+           ^
+  compiled Code at ./build/run/airbyte_utils/models/transformed.sql
+[0m11:47:28.175791 [error] [Thread-1 (]: 1 of 1 ERROR creating sql view model public.transformed ................................................................ [[31mERROR[0m in 0.04s]
+[0m11:47:28.176221 [debug] [Thread-1 (]: Finished running node model.airbyte_utils.transformed
+[0m11:47:28.177742 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.177992 [debug] [MainThread]: On master: BEGIN
+[0m11:47:28.178190 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:47:28.182049 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:28.182286 [debug] [MainThread]: On master: COMMIT
+[0m11:47:28.182492 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:28.182675 [debug] [MainThread]: On master: COMMIT
+[0m11:47:28.183048 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:28.183255 [debug] [MainThread]: On master: Close
+[0m11:47:28.183694 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:47:28.183898 [debug] [MainThread]: Connection 'model.airbyte_utils.transformed' was properly closed.
+[0m11:47:28.184097 [info ] [MainThread]: 
+[0m11:47:28.184300 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.10 seconds (0.10s).
+[0m11:47:28.184637 [debug] [MainThread]: Command end result
+[0m11:47:28.191856 [info ] [MainThread]: 
+[0m11:47:28.192155 [info ] [MainThread]: [31mCompleted with 1 error and 0 warnings:[0m
+[0m11:47:28.192360 [info ] [MainThread]: 
+[0m11:47:28.192558 [error] [MainThread]:   Database Error in model transformed (models/transformed.sql)
+  syntax error at or near "from"
+  LINE 13: from actor
+           ^
+  compiled Code at ./build/run/airbyte_utils/models/transformed.sql
+[0m11:47:28.192744 [info ] [MainThread]: 
+[0m11:47:28.192939 [info ] [MainThread]: Done. PASS=0 WARN=0 ERROR=1 SKIP=0 TOTAL=1
+[0m11:47:28.193456 [debug] [MainThread]: Resource report: {"command_name": "build", "command_wall_clock_time": 1.2416916, "process_user_time": 2.244193, "process_kernel_time": 0.108272, "process_mem_max_rss": "146272", "process_in_blocks": "3328", "process_out_blocks": "4368", "command_success": false}
+[0m11:47:28.193788 [debug] [MainThread]: Command `dbt build` failed at 11:47:28.193713 after 1.24 seconds
+[0m11:47:28.194015 [debug] [MainThread]: Flushing usage events
+
+
+============================== 11:47:47.462530 | 4050b1a2-6c95-4fb6-8850-e6b7ae0850d2 ==============================
+[0m11:47:47.462530 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:47:47.464194 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/em/dbt_project/src/em/dbt_project', 'version_check': 'True', 'warn_error': 'None', 'log_path': '/home/em/dbt_project/src/em/dbt_project/logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt build', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'False'}
+[0m11:47:47.538178 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m11:47:47.538654 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m11:47:47.693561 [info ] [MainThread]: Registered adapter: postgres=1.7.3
+[0m11:47:47.700345 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m11:47:47.746339 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 1 files changed.
+[0m11:47:47.746775 [debug] [MainThread]: Partial parsing: updated file: airbyte_utils://models/transformed.sql
+[0m11:47:47.867270 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.movies
+[0m11:47:47.878777 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 835 macros, 0 groups, 0 semantic models
+[0m11:47:47.879669 [info ] [MainThread]: 
+[0m11:47:47.880205 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:47:47.881049 [debug] [ThreadPool]: Acquiring new postgres connection 'list_em'
+[0m11:47:47.886895 [debug] [ThreadPool]: Using postgres connection "list_em"
+[0m11:47:47.887145 [debug] [ThreadPool]: On list_em: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:47:47.887330 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:47.892758 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m11:47:47.893614 [debug] [ThreadPool]: On list_em: Close
+[0m11:47:47.894703 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_em, now list_em_public)
+[0m11:47:47.898236 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:47.898460 [debug] [ThreadPool]: On list_em_public: BEGIN
+[0m11:47:47.898638 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:47:47.902287 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:47.902507 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:47.902697 [debug] [ThreadPool]: On list_em_public: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em_public"} */
+select
+      'em' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:47:47.905506 [debug] [ThreadPool]: SQL status: SELECT 4 in 0.0 seconds
+[0m11:47:47.906382 [debug] [ThreadPool]: On list_em_public: ROLLBACK
+[0m11:47:47.906882 [debug] [ThreadPool]: On list_em_public: Close
+[0m11:47:47.910471 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.910701 [debug] [MainThread]: On master: BEGIN
+[0m11:47:47.910884 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:47.914428 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:47.914648 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.914869 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:47:47.918341 [debug] [MainThread]: SQL status: SELECT 0 in 0.0 seconds
+[0m11:47:47.919105 [debug] [MainThread]: On master: ROLLBACK
+[0m11:47:47.919510 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.919747 [debug] [MainThread]: On master: BEGIN
+[0m11:47:47.920250 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:47.920484 [debug] [MainThread]: On master: COMMIT
+[0m11:47:47.920672 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.920839 [debug] [MainThread]: On master: COMMIT
+[0m11:47:47.921162 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:47.921370 [debug] [MainThread]: On master: Close
+[0m11:47:47.921867 [info ] [MainThread]: Concurrency: 8 threads (target='prod')
+[0m11:47:47.922079 [info ] [MainThread]: 
+[0m11:47:47.924103 [debug] [Thread-1 (]: Began running node model.airbyte_utils.transformed
+[0m11:47:47.924421 [info ] [Thread-1 (]: 1 of 1 START sql view model public.transformed ......................................................................... [RUN]
+[0m11:47:47.925012 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_em_public, now model.airbyte_utils.transformed)
+[0m11:47:47.925255 [debug] [Thread-1 (]: Began compiling node model.airbyte_utils.transformed
+[0m11:47:47.928697 [debug] [Thread-1 (]: Writing injected SQL for node "model.airbyte_utils.transformed"
+[0m11:47:47.929049 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (compile): 11:47:47.925399 => 11:47:47.928928
+[0m11:47:47.929275 [debug] [Thread-1 (]: Began executing node model.airbyte_utils.transformed
+[0m11:47:47.951198 [debug] [Thread-1 (]: Writing runtime sql for node "model.airbyte_utils.transformed"
+[0m11:47:47.951572 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:47.951791 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: BEGIN
+[0m11:47:47.951992 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:47:47.956559 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:47.956796 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:47.956997 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+
+  create view "em".public."transformed__dbt_tmp"
+    
+    
+  as (
+    select
+    actor_id,
+    last_name,
+    first_name,
+    first_name || last_name as full_name,
+    last_update
+from actor
+  );
+[0m11:47:47.958570 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m11:47:47.962099 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:47.962340 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+alter table "em".public."transformed__dbt_tmp" rename to "transformed"
+[0m11:47:47.963118 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:47:47.970748 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: COMMIT
+[0m11:47:47.971004 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:47.971210 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: COMMIT
+[0m11:47:47.972639 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:47.976511 [debug] [Thread-1 (]: Applying DROP to: "em".public."transformed__dbt_backup"
+[0m11:47:47.979325 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:47.979567 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+drop view if exists "em".public."transformed__dbt_backup" cascade
+[0m11:47:47.980357 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m11:47:47.981232 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (execute): 11:47:47.929410 => 11:47:47.981120
+[0m11:47:47.981471 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: Close
+[0m11:47:47.982075 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public.transformed .................................................................... [[32mCREATE VIEW[0m in 0.06s]
+[0m11:47:47.982419 [debug] [Thread-1 (]: Finished running node model.airbyte_utils.transformed
+[0m11:47:47.984262 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.984474 [debug] [MainThread]: On master: BEGIN
+[0m11:47:47.984651 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:47:47.988560 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:47.988784 [debug] [MainThread]: On master: COMMIT
+[0m11:47:47.988974 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:47.989138 [debug] [MainThread]: On master: COMMIT
+[0m11:47:47.989707 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:47.989946 [debug] [MainThread]: On master: Close
+[0m11:47:47.990435 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:47:47.990646 [debug] [MainThread]: Connection 'model.airbyte_utils.transformed' was properly closed.
+[0m11:47:47.990856 [info ] [MainThread]: 
+[0m11:47:47.991070 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.11 seconds (0.11s).
+[0m11:47:47.991463 [debug] [MainThread]: Command end result
+[0m11:47:47.998436 [info ] [MainThread]: 
+[0m11:47:47.998707 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:47:47.998909 [info ] [MainThread]: 
+[0m11:47:47.999114 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:47:47.999613 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 0.57620776, "process_user_time": 1.654699, "process_kernel_time": 0.050142, "process_mem_max_rss": "136576", "process_out_blocks": "4368", "process_in_blocks": "0"}
+[0m11:47:47.999937 [debug] [MainThread]: Command `dbt build` succeeded at 11:47:47.999861 after 0.58 seconds
+[0m11:47:48.000152 [debug] [MainThread]: Flushing usage events
+
+
+============================== 11:47:53.116081 | 9b4866c9-9b8e-4cff-ada5-d8a77762d097 ==============================
+[0m11:47:53.116081 [info ] [MainThread]: Running with dbt=1.7.3
+[0m11:47:53.117606 [debug] [MainThread]: running dbt with arguments {'printer_width': '120', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/home/em/dbt_project/src/em/dbt_project', 'version_check': 'True', 'debug': 'False', 'log_path': '/home/em/dbt_project/src/em/dbt_project/logs', 'warn_error': 'None', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'invocation_command': 'dbt run', 'introspect': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'False'}
+[0m11:47:53.182229 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `log-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version of
+dbt-core. If you wish to write dbt logs to a custom directory, please use the --log-path CLI flag or DBT_LOG_PATH env
+var instead.
+[0m11:47:53.182648 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `target-path` config in `dbt_project.yml` has been deprecated, and will no longer be supported in a future version
+of dbt-core. If you wish to write dbt artifacts to a custom directory, please use the --target-path CLI flag or
+DBT_TARGET_PATH env var instead.
+[0m11:47:53.346421 [info ] [MainThread]: Registered adapter: postgres=1.7.3
+[0m11:47:53.354404 [debug] [MainThread]: checksum: c95636796e12235e48c0560a0bb6a50e98827ef72e7ea1fe07a97c38c91661e1, vars: {}, profile: , target: , version: 1.7.3
+[0m11:47:53.398372 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m11:47:53.398658 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m11:47:53.398977 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.movies
+[0m11:47:53.409516 [info ] [MainThread]: Found 1 model, 2 sources, 0 exposures, 0 metrics, 835 macros, 0 groups, 0 semantic models
+[0m11:47:53.410533 [info ] [MainThread]: 
+[0m11:47:53.411079 [debug] [MainThread]: Acquiring new postgres connection 'master'
+[0m11:47:53.412000 [debug] [ThreadPool]: Acquiring new postgres connection 'list_em'
+[0m11:47:53.417953 [debug] [ThreadPool]: Using postgres connection "list_em"
+[0m11:47:53.418173 [debug] [ThreadPool]: On list_em: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em"} */
+
+    select distinct nspname from pg_namespace
+  
+[0m11:47:53.418347 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m11:47:53.423542 [debug] [ThreadPool]: SQL status: SELECT 8 in 0.0 seconds
+[0m11:47:53.424308 [debug] [ThreadPool]: On list_em: Close
+[0m11:47:53.425470 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_em, now list_em_public)
+[0m11:47:53.429151 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:53.429393 [debug] [ThreadPool]: On list_em_public: BEGIN
+[0m11:47:53.429574 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m11:47:53.433063 [debug] [ThreadPool]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:53.433300 [debug] [ThreadPool]: Using postgres connection "list_em_public"
+[0m11:47:53.433490 [debug] [ThreadPool]: On list_em_public: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "list_em_public"} */
+select
+      'em' as database,
+      tablename as name,
+      schemaname as schema,
+      'table' as type
+    from pg_tables
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      viewname as name,
+      schemaname as schema,
+      'view' as type
+    from pg_views
+    where schemaname ilike 'public'
+    union all
+    select
+      'em' as database,
+      matviewname as name,
+      schemaname as schema,
+      'materialized_view' as type
+    from pg_matviews
+    where schemaname ilike 'public'
+  
+[0m11:47:53.436341 [debug] [ThreadPool]: SQL status: SELECT 5 in 0.0 seconds
+[0m11:47:53.437169 [debug] [ThreadPool]: On list_em_public: ROLLBACK
+[0m11:47:53.437596 [debug] [ThreadPool]: On list_em_public: Close
+[0m11:47:53.441509 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.441740 [debug] [MainThread]: On master: BEGIN
+[0m11:47:53.441920 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m11:47:53.445213 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:53.445439 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.445706 [debug] [MainThread]: On master: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "connection_name": "master"} */
+with relation as (
+        select
+            pg_rewrite.ev_class as class,
+            pg_rewrite.oid as id
+        from pg_rewrite
+    ),
+    class as (
+        select
+            oid as id,
+            relname as name,
+            relnamespace as schema,
+            relkind as kind
+        from pg_class
+    ),
+    dependency as (
+        select distinct
+            pg_depend.objid as id,
+            pg_depend.refobjid as ref
+        from pg_depend
+    ),
+    schema as (
+        select
+            pg_namespace.oid as id,
+            pg_namespace.nspname as name
+        from pg_namespace
+        where nspname != 'information_schema' and nspname not like 'pg\_%'
+    ),
+    referenced as (
+        select
+            relation.id AS id,
+            referenced_class.name ,
+            referenced_class.schema ,
+            referenced_class.kind
+        from relation
+        join class as referenced_class on relation.class=referenced_class.id
+        where referenced_class.kind in ('r', 'v', 'm')
+    ),
+    relationships as (
+        select
+            referenced.name as referenced_name,
+            referenced.schema as referenced_schema_id,
+            dependent_class.name as dependent_name,
+            dependent_class.schema as dependent_schema_id,
+            referenced.kind as kind
+        from referenced
+        join dependency on referenced.id=dependency.id
+        join class as dependent_class on dependency.ref=dependent_class.id
+        where
+            (referenced.name != dependent_class.name or
+             referenced.schema != dependent_class.schema)
+    )
+
+    select
+        referenced_schema.name as referenced_schema,
+        relationships.referenced_name as referenced_name,
+        dependent_schema.name as dependent_schema,
+        relationships.dependent_name as dependent_name
+    from relationships
+    join schema as dependent_schema on relationships.dependent_schema_id=dependent_schema.id
+    join schema as referenced_schema on relationships.referenced_schema_id=referenced_schema.id
+    group by referenced_schema, referenced_name, dependent_schema, dependent_name
+    order by referenced_schema, referenced_name, dependent_schema, dependent_name;
+[0m11:47:53.449048 [debug] [MainThread]: SQL status: SELECT 1 in 0.0 seconds
+[0m11:47:53.449876 [debug] [MainThread]: On master: ROLLBACK
+[0m11:47:53.450254 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.450481 [debug] [MainThread]: On master: BEGIN
+[0m11:47:53.451123 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:53.451351 [debug] [MainThread]: On master: COMMIT
+[0m11:47:53.451531 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.451697 [debug] [MainThread]: On master: COMMIT
+[0m11:47:53.452038 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:53.452273 [debug] [MainThread]: On master: Close
+[0m11:47:53.452756 [info ] [MainThread]: Concurrency: 8 threads (target='prod')
+[0m11:47:53.453010 [info ] [MainThread]: 
+[0m11:47:53.455666 [debug] [Thread-1 (]: Began running node model.airbyte_utils.transformed
+[0m11:47:53.456129 [info ] [Thread-1 (]: 1 of 1 START sql view model public.transformed ......................................................................... [RUN]
+[0m11:47:53.456608 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_em_public, now model.airbyte_utils.transformed)
+[0m11:47:53.456846 [debug] [Thread-1 (]: Began compiling node model.airbyte_utils.transformed
+[0m11:47:53.460130 [debug] [Thread-1 (]: Writing injected SQL for node "model.airbyte_utils.transformed"
+[0m11:47:53.460589 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (compile): 11:47:53.456981 => 11:47:53.460435
+[0m11:47:53.460872 [debug] [Thread-1 (]: Began executing node model.airbyte_utils.transformed
+[0m11:47:53.483530 [debug] [Thread-1 (]: Writing runtime sql for node "model.airbyte_utils.transformed"
+[0m11:47:53.483993 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.484255 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: BEGIN
+[0m11:47:53.484460 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m11:47:53.489189 [debug] [Thread-1 (]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:53.489460 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.489676 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+
+  create view "em".public."transformed__dbt_tmp"
+    
+    
+  as (
+    select
+    actor_id,
+    last_name,
+    first_name,
+    first_name || last_name as full_name,
+    last_update
+from actor
+  );
+[0m11:47:53.491302 [debug] [Thread-1 (]: SQL status: CREATE VIEW in 0.0 seconds
+[0m11:47:53.495293 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.495546 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+alter table "em"."public"."transformed" rename to "transformed__dbt_backup"
+[0m11:47:53.496346 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:47:53.498567 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.498814 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+alter table "em".public."transformed__dbt_tmp" rename to "transformed"
+[0m11:47:53.499538 [debug] [Thread-1 (]: SQL status: ALTER TABLE in 0.0 seconds
+[0m11:47:53.509073 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: COMMIT
+[0m11:47:53.509339 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.509550 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: COMMIT
+[0m11:47:53.510635 [debug] [Thread-1 (]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:53.515401 [debug] [Thread-1 (]: Applying DROP to: "em".public."transformed__dbt_backup"
+[0m11:47:53.518644 [debug] [Thread-1 (]: Using postgres connection "model.airbyte_utils.transformed"
+[0m11:47:53.518906 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: /* {"app": "dbt", "dbt_version": "1.7.3", "profile_name": "normalize", "target_name": "prod", "node_id": "model.airbyte_utils.transformed"} */
+drop view if exists "em".public."transformed__dbt_backup" cascade
+[0m11:47:53.520887 [debug] [Thread-1 (]: SQL status: DROP VIEW in 0.0 seconds
+[0m11:47:53.521810 [debug] [Thread-1 (]: Timing info for model.airbyte_utils.transformed (execute): 11:47:53.461028 => 11:47:53.521693
+[0m11:47:53.522061 [debug] [Thread-1 (]: On model.airbyte_utils.transformed: Close
+[0m11:47:53.522730 [info ] [Thread-1 (]: 1 of 1 OK created sql view model public.transformed .................................................................... [[32mCREATE VIEW[0m in 0.07s]
+[0m11:47:53.523092 [debug] [Thread-1 (]: Finished running node model.airbyte_utils.transformed
+[0m11:47:53.524615 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.524845 [debug] [MainThread]: On master: BEGIN
+[0m11:47:53.525026 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m11:47:53.528978 [debug] [MainThread]: SQL status: BEGIN in 0.0 seconds
+[0m11:47:53.529220 [debug] [MainThread]: On master: COMMIT
+[0m11:47:53.529408 [debug] [MainThread]: Using postgres connection "master"
+[0m11:47:53.529577 [debug] [MainThread]: On master: COMMIT
+[0m11:47:53.529982 [debug] [MainThread]: SQL status: COMMIT in 0.0 seconds
+[0m11:47:53.530227 [debug] [MainThread]: On master: Close
+[0m11:47:53.530692 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m11:47:53.530892 [debug] [MainThread]: Connection 'model.airbyte_utils.transformed' was properly closed.
+[0m11:47:53.531102 [info ] [MainThread]: 
+[0m11:47:53.531322 [info ] [MainThread]: Finished running 1 view model in 0 hours 0 minutes and 0.12 seconds (0.12s).
+[0m11:47:53.531691 [debug] [MainThread]: Command end result
+[0m11:47:53.539136 [info ] [MainThread]: 
+[0m11:47:53.539469 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m11:47:53.539685 [info ] [MainThread]: 
+[0m11:47:53.539912 [info ] [MainThread]: Done. PASS=1 WARN=0 ERROR=0 SKIP=0 TOTAL=1
+[0m11:47:53.540428 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 0.45761338, "process_user_time": 1.548214, "process_kernel_time": 0.050595, "process_mem_max_rss": "133060", "process_out_blocks": "2936", "process_in_blocks": "0"}
+[0m11:47:53.540766 [debug] [MainThread]: Command `dbt run` succeeded at 11:47:53.540676 after 0.46 seconds
+[0m11:47:53.540994 [debug] [MainThread]: Flushing usage events
