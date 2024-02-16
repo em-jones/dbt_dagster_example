@@ -1,0 +1,30 @@
+load_from:
+  # Each entry here corresponds to a service in the docker-compose file that exposes user code.
+  - grpc_server:
+      host: dagster_em
+      port: 4000
+      location_name: "em"
+  - grpc_server:
+      host: dagster_maggie
+      port: 4000
+      location_name: "maggie"
+  - grpc_server:
+      host: dagster_jeff
+      port: 4000
+      location_name: "jeff"
+  - grpc_server:
+      host: dagster_scott
+      port: 4000
+      location_name: "scott"
+  - grpc_server:
+      host: dagster_alan
+      port: 4000
+      location_name: "alan"
+  - grpc_server:
+      host: dagster_husam
+      port: 4000
+      location_name: "husam"
+  - grpc_server:
+      host: dagster_david
+      port: 4000
+      location_name: "david"

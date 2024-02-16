@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  dagster_REPLACE_ME: 
+    networks:
+      - airbyte_airbyte_public
+    build:
+      context: .
+    develop:
+      watch:
+        - action: rebuild
+          path: ./
+    container_name: dagster_REPLACE_ME
+    image: dagster_REPLACE_ME
+    restart: always
+    env_file:
+      - .env
+    environment: 
+      DAGSTER_POSTGRES_USER: "postgres_user"
+      DAGSTER_POSTGRES_PASSWORD: "postgres_password"
+      DAGSTER_POSTGRES_DB: "postgres_db"
+      DAGSTER_POSTGRES_HOST: dagster_postgres
+      DAGSTER_CURRENT_IMAGE: "dagster_REPLACE_ME"
+      AIRBYTE_PASSWORD: ${AIRBYTE_PASSWORD}
+      AIRBYTE_CONNECTIONS: ${AIRBYTE_CONNECTIONS}
+networks:
+  airbyte_airbyte_public:
+    external: true
