@@ -1,0 +1,13 @@
+{
+    "recommendations": [
+        "innoverio.vscode-dbt-power-user",
+        "bastienboutonnet.vscode-dbt",
+        "henriblancke.vscode-dbt-formatter",
+        "mtxr.sqltools",
+        "kj.sqltools-driver-redshift",
+        "mtxr.sqltools-driver-pg",
+        "redhat.vscode-yaml",
+        "ZainChen.json",
+        "ms-vscode-remote.remote-ssh"
+    ]
+}
