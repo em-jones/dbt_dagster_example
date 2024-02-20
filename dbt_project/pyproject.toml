@@ -1,7 +1,0 @@
-[project]
-dependencies = [
-  "dbt-core",
-  "dbt-postgres",
-  "dbt-mssql",
-  "dbt-redshift"
-]

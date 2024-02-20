@@ -1,3 +1,0 @@
-
-run:
-		docker compose watch
